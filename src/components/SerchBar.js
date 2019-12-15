@@ -1,8 +1,8 @@
 import React from "react";
 
 class SerchBar extends React.Component {
-    onInputChange(event) {
-        console.log(event.target.value);
+    state = {
+        term:''
     }
 
     render() {
@@ -11,7 +11,8 @@ class SerchBar extends React.Component {
                 <div className="field">
                     <label>Image Search</label>
                     <input type="text"
-                           onChange={this.onInputChange}
+                           value={this.state.term}
+                           onChange={(e) => this.setState({term: e.target.value.})}
                     />
                 </div>
             </form>
