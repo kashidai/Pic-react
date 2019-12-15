@@ -1,7 +1,9 @@
 import React from "react";
-
+import SerchBar from "./SerchBar";
 const App = ()=>{
-    return <div>App</div>;
+    return <div>
+        <SerchBar />
+    </div>;
 };
 
 export default App;
